@@ -32,7 +32,7 @@ namespace ChatbotApp
             string usernameInput = textBox1.Text;
             string passwordInput = textBox2.Text;
 
-                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\pamij\Source\Repos\ChatbotApp\ChatbotApp\Login.mdf;Integrated Security=True"))
+                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\pamij\Downloads\Eunoia-master\Eunoia-master\ChatbotApp\LoginApp.mdf;Integrated Security=True"))
                 {
                     string query = "SELECT * FROM LOGIN WHERE username =@username AND password =@password";
                     SqlCommand command = new SqlCommand(query, conn);

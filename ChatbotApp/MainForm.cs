@@ -9,6 +9,7 @@ namespace ChatbotApp
     public partial class MainForm : Form
     {
         private const string ApiKey = "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";
+        // Use this if not work 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
         private const string ApiUrl = "https://api.openai.com/v1/chat/completions";
 
         private readonly HttpClient client;
